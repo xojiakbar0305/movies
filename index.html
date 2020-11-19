@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+  <h1 class="sr-only">kinolar</h1>
+  <div class="container mt-4">
+    <h2 class="h3">Kinolar</h2>
+    <form class="movies-search-form" action="#" method="GET">
+      <input class="movies-search-input form-control" type="search" name="search" placeholder="Search" aria-label="movie search input">
+      <select class="search-select form-control py-1 my-3 px-4" name="select" id="selected">
+      </select>
+      <input class="movie-rating form-control mb-3" type="text" name="text" placeholder="Rating" aria-label="movie rating" autocomplete="off" spellcheck="false">
+      <button class="movies-search-button btn btn-info my-3">search</button>
+    </form>
+    <ul class="movies-list list-group">
+
+    </ul>
+
+    <template id="moviesTemplate">
+      <li class="list-group-item w-50 mb-4 border">
+        <img class="movie-img-youtube mb-3" src="" alt="">
+        <h3 class="movie-title h5 text-info">kino title</h3>
+        <span class="movie-year text-warning">2010</span>
+        <p class="movie-categories"></p>
+        <p class="movie-summar text-success">lorem, porem</p>
+        <a class="movie-youtube d-inline-block mb-2" href="" target="_blank"></a>
+        <p class="movie-rating"></p>
+      </li>
+    </template>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/movies.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
